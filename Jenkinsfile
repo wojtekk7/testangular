@@ -16,12 +16,7 @@ pipeline {
         bat 'npm run-script build'
        }
     }
-    
-    stage('Cleanup') {
-      steps {
-        deleteDir()
-       }
-    }
+
     
     
   }
