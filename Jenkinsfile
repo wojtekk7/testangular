@@ -4,15 +4,15 @@ pipeline {
   tools {nodejs "nodejs 14.11.0"}
   
   stages {
-    stage("Install modules") {
+    stage('Install modules') {
       steps {
-        bat "npm install"
+        bat 'npm install'
        }
     }
     
-     stage("Install modules") {
+     stage('Build') {
       steps {
-        bat "npm install"
+        bat 'npm run-script build'
        }
     }
   }
