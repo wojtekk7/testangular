@@ -23,8 +23,7 @@ pipeline {
         bat 'npm run-script build'
        }
     }
+    
+    
   }
-
-
-
 }
