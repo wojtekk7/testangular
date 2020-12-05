@@ -4,14 +4,7 @@ pipeline {
   tools {nodejs "nodejs 14.11.0"}
   
   stages {
-    
-    stage('Cleanup') {
-      steps {
-        deleteDir()
-       }
-    }
-    
-    
+       
     stage('Install modules') {
       steps {
         bat 'npm install'
@@ -21,6 +14,12 @@ pipeline {
      stage('Build') {
       steps {
         bat 'npm run-script build'
+       }
+    }
+    
+    stage('Cleanup') {
+      steps {
+        deleteDir()
        }
     }
     
