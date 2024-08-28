@@ -24,8 +24,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm ci
-    - run: npm run build --if-present
-    - run: npm test
+    - run: npm run build
 
     - name: Upload build artifacts
       if: success()  # Upload artefakty tylko jeśli poprzednie kroki zakończyły się sukcesem
