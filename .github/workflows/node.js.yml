@@ -32,6 +32,6 @@ jobs:
       with:
         name: build-artifacts
         path: |
-          ./build
-          ./coverage
-          ./test-results.xml
+          ./dist/**
+        retention-days: 3
+
