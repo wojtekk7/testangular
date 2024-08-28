@@ -30,7 +30,7 @@ jobs:
       if: success()  # Upload artefakty tylko jeśli poprzednie kroki zakończyły się sukcesem
       uses: actions/upload-artifact@v3
       with:
-        name: build-artifacts
+        name: myartifacts
         path: |
           ./dist/**
         retention-days: 3
